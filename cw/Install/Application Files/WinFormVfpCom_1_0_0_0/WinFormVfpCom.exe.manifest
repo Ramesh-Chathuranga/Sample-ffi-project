@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="WinFormVfpCom.exe" version="1.0.0.0" publicKeyToken="168c26d76605c90d" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="WinFormVfpCom" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="WinFormVfpCom.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.autoapptbackend.dll" size="4608">
+      <assemblyIdentity name="Interop.autoapptbackend" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>flyFkYaVcWcgcdpdBGJRCRDz+xEUABPhlKP6mdCYvow=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.comdemo.dll" size="4608">
+      <assemblyIdentity name="Interop.comdemo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>a72cys5UuFGDR+xVsYa3p8iGpqX/8tkFJm/ZbawpiU8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WinFormVfpCom.exe" size="12760">
+      <assemblyIdentity name="WinFormVfpCom" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wvtzd+hPHSnnwFrCehtr7QOpZ4ZfrBRHV2yoQf8W7sg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="WinFormVfpCom.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=CHANDANAPC\Chandana" issuerKeyHash="dad0d66c8859e4a0830df8e33d7c08089ac7c39d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>G5cN91KadMrss6dGZUyB1kM5AsHQZDNSYusS0f+/sJY=</DigestValue></Reference></SignedInfo><SignatureValue>hDzxvp7wxkhmDIwDzmWwDWc+92G/SaYCFNwdbxfNUT51ftoKlxq0F1aEOXN6UMhziefkB3oZNAqpuK0azxHQfOw6iOe+vvDKNJi/obVfyJ3NCSRKTrrUHxfHzVNJ0x8qyU5Ta+SIzHB8Z8snB5UjdS+nvMCCe4SJJESjvM2scaY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>w7RJzNlaaQ6rckCRCkTlhDizesPEpWgIwtUduXaE13CSXm7oohLA+hN+elLoKnCKzXUc4Ic+HCq8aETlvINXDg7E4d78TDfUBEAF4nfffMyyuENGfUYuRVNsAP7rlR0pb6fxMbmVWpJGZt3PHFQQBo6QvL89kEMOGGs6i43w9Ik=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="96b0bfffd112eb62523364d0c1023943d6814c6546a7b3ecca749a52f70d971b" Description="" Url=""><as:assemblyIdentity name="WinFormVfpCom.exe" version="1.0.0.0" publicKeyToken="168c26d76605c90d" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=CHANDANAPC\Chandana</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>niNTFfDvNWLuarjIFueNzePOP7j4m+I1gpeMzotZdTo=</DigestValue></Reference></SignedInfo><SignatureValue>EGwO+Il288uDnvFVYCrHd1Dl2r54TPmT/COiqSz/KWIHPuWby0KiNxR6n3/sEt7p7D6WPOEdf7quxTABbtUY/o7jcmVmUO9YYHUMGMNHVmy8qXLVwukde+9uBKAwZ/4wwi/bTxBJojxIzqjfyqXE+HNDCt7p8utVvkM1PWwgVWY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>w7RJzNlaaQ6rckCRCkTlhDizesPEpWgIwtUduXaE13CSXm7oohLA+hN+elLoKnCKzXUc4Ic+HCq8aETlvINXDg7E4d78TDfUBEAF4nfffMyyuENGfUYuRVNsAP7rlR0pb6fxMbmVWpJGZt3PHFQQBo6QvL89kEMOGGs6i43w9Ik=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQSwOysAE4B51MbnSSyoFVpjANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYAQwBIAEEATgBEAEEATgBBAFAAQwBcAEMAaABhAG4AZABhAG4AYTAeFw0yMDA2MDIxNTE5MDRaFw0yMTA2MDIyMTE5MDRaMDExLzAtBgNVBAMeJgBDAEgAQQBOAEQAQQBOAEEAUABDAFwAQwBoAGEAbgBkAGEAbgBhMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDtEnM2VppDqtyQJEKROWEOLN6w8SlaAjC1R25doTXcJJebuiiEsD6E356UugqcIrNdRzghz4cKrxoROW8g1cODsTh3vxMN9QEQAXid998zLK4Q0Z9Ri5FU2wA/uuVHSlvp/ExuZVakkZm3c8cVBAGjpC8vz2QQw4YazqLjfD0iQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAEmnlWeRHc7uWoqboblRjjBeLIMr3XE4bXNzsRE8PMb1J+AYLqW0VfNMKGQt2cCQwlBI+ccLrwWTt4m5rkLzrlfnN5dPGrq3gR5yKMUJNNdBNk1uyV6HB8p5jMpnIYfOqD20tWdyYhtIXQRd3QISgtGH2093iFP0LdTX77AwFA87</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
